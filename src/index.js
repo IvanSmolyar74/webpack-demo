@@ -1,3 +1,3 @@
 import component from "./component";
 
-document.body.appendChild(component('Hello Ivan'))
+document.body.appendChild(component('Hello !!!'))
