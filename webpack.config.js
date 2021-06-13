@@ -10,6 +10,8 @@ module.exports = {
     new MiniHtmlWebpackPlugin({ context: { title: 'Demo' } }),
     new WebpackPluginServe({
       port: process.env.PORT || 8080,
+      host: 'localhost',
+      open: true,
       static: './dist',
       liveReload: true,
       waitForBuild: true
