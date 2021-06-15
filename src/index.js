@@ -1,3 +1,3 @@
 import component from "./component";
-
-document.body.appendChild(component('Hello !!!'))
+import './style/index.css'
+document.body.appendChild(component('Hello world!'))

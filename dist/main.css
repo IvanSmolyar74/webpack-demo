@@ -1,0 +1,9 @@
+body {
+  font-size: 2rem;
+  font-weight: bold;
+  color: tomato;
+  background-color: aqua;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+}
