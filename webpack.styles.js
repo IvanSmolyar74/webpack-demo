@@ -17,7 +17,7 @@ exports.cssLoader = ({ options = {}, loaders = [] } = {}) => {
             {
               loader: "postcss-loader",
               options: {
-                postcssOptions: { plugins: [require("tailwindcss")()] },
+                postcssOptions: { plugins: [require('autoprefixer')(), require("tailwindcss")()] },
               },
             }
           ].concat(loaders),
