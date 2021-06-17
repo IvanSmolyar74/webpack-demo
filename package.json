@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "glob": "^7.1.7",
+    "purgecss-webpack-plugin": "^4.0.3",
     "webpack": "^5.38.1",
     "webpack-nano": "^1.1.1"
   },

@@ -2,7 +2,7 @@ const glob = require('glob')
 const { mode } = require('webpack-nano/argv')
 const { merge } = require('webpack-merge')
 const { page, devServer } = require('./webpack.parts')
-const { cssLoader } = require('./webpack.styles')
+const { cssLoader, eliminateUnusedCSS } = require('./webpack.styles')
 
 const commonConfig = merge([
   {
@@ -12,7 +12,7 @@ const commonConfig = merge([
   cssLoader()
 ])
 
-const productionConfig = merge([])
+const productionConfig = merge([eliminateUnusedCSS()])
 
 const developmentConfig = merge([
   { entry: ['webpack-plugin-serve/client'] },
